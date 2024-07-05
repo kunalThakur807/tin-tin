@@ -10,6 +10,7 @@ void main() async {
   await AndroidAlarmManager.initialize();
   await Hive.initFlutter();
   await Hive.openBox(AppConstants.boxName);
+
   MyInAppNotification().initNotification();
   runApp(const MyApp());
 }
